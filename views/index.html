@@ -1,1 +1,57 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
 
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="freeCodeCamp #2 API Challenge">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>
+        API Project: Request Header Parser Microservice
+      </h1>
+
+    <blockquote>
+      
+      User Story:
+      <ul>
+        I can get the IP address, preferred languages (from header <code>Accept-Language</code>)<br> and system infos (from header <code>User-Agent</code>) for my device.
+      </ul>
+    </blockquote>
+      <h3>Example usage:</h3>
+      
+      <form action = "https://freecodecamp-request-header-parser.glitch.me/api/whoami">
+        <button type="submit" id="submit-dream">[base url]/api/whoami</button>
+      </form>
+      <br>
+      
+      <h3>Example Output:</h3>
+        <code>{"ipaddress":"159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
+          
+    <footer>
+      Made by <a target = "_blank" href="https://codepen.io/redhairedgadget/">Redhairedgadget</a>.
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    </div>
+  </body>
+</html>
